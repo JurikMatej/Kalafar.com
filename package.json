@@ -1,0 +1,39 @@
+{
+  "name": "kalafar.com",
+  "version": "1.0.0",
+  "description": "Remake of Kalafar (CoD MW3 Server Launcher Project). Windows forms Kalafar (Pascal) -> Web Kalafar (JavaScript)",
+  "main": "app/static/js/main.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass ./app/src/sass/main.scss ./app/static/css/main.css",
+    "build-css-watch": "sass ./app/src/sass/main.scss --watch ./app/static/css/main.css",
+    "build-js": "babel ./app/src/scripts --out-file app/static/js/main.js",
+    "build-js-watch": "babel ./app/src/scripts --watch --out-file app/static/js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JurikMatej/Kalafar.com.git"
+  },
+  "keywords": [
+    "kalafar",
+    "cod",
+    "mw3",
+    "learncssproperly",
+    "learnjsproperly"
+  ],
+  "author": "Matej Jurik <jurik.matejw@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JurikMatej/Kalafar.com/issues"
+  },
+  "homepage": "https://github.com/JurikMatej/Kalafar.com#readme"
+}
