@@ -1,3 +1,216 @@
+/** Reference
+ *div {
+ *	 animation-name: example;
+ *	 animation-duration: 5s;
+ *	 animation-timing-function: linear;
+ *	 animation-delay: 2s;
+ *	 animation-iteration-count: infinite;
+ *	 animation-direction: alternate;
+ *}
+ *  // VS
+ *div {
+ *	 animation: example 5s linear 2s infinite alternate;
+ *}
+ *
+ */
+/* Page Backgrounds */
+/* Main background - MW3 Wallpaper */
+body {
+  background-image: url("../images/backgrounds/main_menu_borderless.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+/* Font options */
+/* HTML Text Formatting Elements */
+h1, h1.headline, h2, h3, h4, h5, h6, a, p, span {
+  user-select: none;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-family: "Syncopate", sans-serif;
+  color: white;
+  text-wrap: normal;
+  word-wrap: break-word;
+}
+
+/* Headers */
+h1, h1.headline {
+  font-size: 56px;
+  color: white;
+  width: 90%;
+  margin: 1.25em auto 0.2em auto;
+  padding: 7.5px 15px;
+}
+h1.headline {
+  color: white;
+  text-align: right;
+}
+
+/* Paragraphs */
+p {
+  font-size: 28px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.1s ease-in-out;
+}
+a:hover {
+  color: #00CC00 !important;
+}
+a:hover span.mw3 {
+  color: #00CC00 !important;
+}
+
+/* Inline Spans */
+span.mw3 {
+  color: #00CC00;
+  transition: color 0.1s ease-in-out;
+}
+
+/* In-Footer font */
+footer * {
+  font-size: 18px;
+}
+footer p {
+  display: inline;
+}
+footer .footer-contact {
+  list-style: none;
+}
+footer .footer-contact li.media {
+  display: inline;
+  padding: 10px 30px;
+  color: #00CC00;
+}
+
+/* Page components */
+/* App infrastructure */
+html {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: inherit;
+}
+
+/* App  */
+.mw3-app {
+  height: inherit;
+}
+.mw3-app .mw3-menu {
+  /* Main Menu */
+  position: relative;
+  padding-right: 0;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.3) no-repeat content-box;
+  border: none;
+}
+.mw3-app .mw3-menu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(130, 130, 130, 0.85);
+}
+.mw3-app .mw3-menu hr.mw3-hr {
+  /* Main Menu horizontal line component */
+  height: 1.2px;
+  width: 100%;
+  margin: 1px auto 1px auto;
+  border: none;
+  background-color: transparent;
+  background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5), rgba(160, 160, 160, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+.mw3-app .mw3-menu .menu-entries {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.mw3-app .mw3-menu .menu-entries .menu-entry {
+  margin: 3px 0;
+  padding: 3px 2em 3px 0;
+  text-align: right;
+}
+.mw3-app .mw3-menu .menu-entries .rate-me {
+  color: #00CC00;
+}
+.mw3-app .mw3-menu .menu-entries .menu-tooltip {
+  font-size: 24px;
+}
+.mw3-app .mw3-menu footer {
+  /* FOOTER COMPONENT */
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 18px;
+  position: absolute;
+  left: 3em;
+  bottom: 2em;
+}
+.mw3-app .mw3-options {
+  /* Options Menu */
+  height: inherit;
+}
+.mw3-app .mw3-options .options-widget {
+  /* Selected Option widgets */
+  /* Default Display Widget - Clear Page */
+  height: 100%;
+  width: 100%;
+}
+.mw3-app .mw3-options .options-widget-base p.mw3-friendlist-icon {
+  position: absolute;
+  padding: 2.5px 15px;
+  bottom: 1.5em;
+  right: 2em;
+}
+
+/* Other Components */
+hr {
+  /* Theme horizontal lines */
+  border: none;
+  background-color: black;
+  height: 1px;
+}
+
+.menu-clickable:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, transparent, rgba(122, 130, 117, 0.9));
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+}
+.menu-clickable:hover::after {
+  content: "";
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #00CC00;
+}
+
+.clickable {
+  border-radius: 0.5px;
+}
+.clickable:hover {
+  cursor: pointer;
+  background-color: rgba(122, 130, 117, 0.9);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 479px) {
+  .mw3-app .mw3-options {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

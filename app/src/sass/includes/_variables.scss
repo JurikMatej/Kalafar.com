@@ -1,0 +1,21 @@
+///////////////* Page *////////////////////
+$menu-widescreen: calc(1920px / 3);
+$options-widescreen: calc(calc(1920px / 3 ) * 2);
+
+$menu-tablet: calc(780px / 2);
+$options-widescreen: calc(780px / 2);
+
+$menu-mobile: 300px;
+
+///////////////* Fonts *///////////////////
+$base-font-family: 'Syncopate', sans-serif;
+///////////////////////////////////////////
+$base-font-color: white;
+$base-font-size-h1: 56px;
+$base-font-size-p: 28px;
+
+$tooltip-font-size-p: 24px;
+///////////////////////////////////////////
+$footer-font-size: 18px;
+///////////////////////////////////////////
+$mw3-font-color: #00CC00;

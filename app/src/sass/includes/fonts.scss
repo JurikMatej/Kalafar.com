@@ -1,0 +1,76 @@
+/* Font options */
+
+/* HTML Text Formatting Elements */
+h1, h2, h3, h4, h5, h6, a, p, span {
+	user-select: none;
+	text-transform: uppercase;
+	line-height: 1.4;
+	font-family: $base-font-family;
+	color: $base-font-color;
+	text-wrap: normal;
+	word-wrap: break-word;
+}
+
+/* Headers */
+h1 {
+	font-size: $base-font-size-h1;
+	color: white;
+	width: 90%;
+	margin: 1.25em auto 0.2em auto;
+	padding: 7.5px 15px;
+
+	&.headline {
+		@extend h1;
+		color: $base-font-color;
+		text-align: right;
+	}
+}
+
+/* Paragraphs */
+p {
+	font-size: $base-font-size-p;
+}
+
+/* Links */
+a {
+	text-decoration: none;
+	color: $base-font-color;
+	transition: color 0.1s ease-in-out;
+
+	&:hover {
+		color: $mw3-font-color !important;
+
+		& span.mw3 {
+			color: $mw3-font-color !important;
+		}
+	}
+}
+
+/* Inline Spans */
+span.mw3 {
+  color: $mw3-font-color;
+  transition: color 0.1s ease-in-out;
+}
+
+/* In-Footer font */
+footer {
+
+	& * {
+		font-size: $footer-font-size;
+	}
+
+	& p {
+		display: inline;
+	}
+
+	& .footer-contact {
+		list-style: none;
+
+		& li.media {
+			display: inline;
+			padding: 10px 30px;
+			color: $mw3-font-color;
+		}
+
+	}
+}

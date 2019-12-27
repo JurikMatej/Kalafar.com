@@ -9,22 +9,101 @@
     <meta name="author" content="Matej Jurik &lt;jurik.matejw@gmail.com&gt;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--  Fonts  -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+
     <!--  JS Libraries -->
     <!-- <script src="../../../node_modules/popper.js/dist/popper.min.js"></script>-->
     <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- My compiled code -->
-    <script src="../../../app/static/js/main.js"></script>
-
+    <!--  Title Icon  -->
+    <link rel="icon" href="../images/icons/favicon-mw3.ico">
     <!--  CSS Styles  -->
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css" type="text/css"/>
 
     <title>Kalafar.com</title>
 </head>
 
 <body>
-    <h1>Welcome to Kalafar.com</h1>
-    <p>Kalafar.com is currently under maintenance, please check back later.</p>
+    <!-- Left-hand side Widget - Main Menu -->
+    <div class="mw3-app row">
+        <div class="mw3-menu col-md-4">
+            <h1 class="headline"><a href="./"><span class="mw3">Kalafar</span>.com</a></h1>
+            <hr class="mw3-hr">
+
+            <div class="menu-entries">
+                <form action="">
+                    <p class="menu-entry menu-clickable mw3-launch">Launch</p>
+                </form>
+            </div>
+
+            <hr class="mw3-hr">
+
+            <div class="menu-entries">
+                <p class="menu-entry menu-clickable">Client Setup</p>
+                <p class="menu-entry menu-clickable">Server Settings</p>
+                <p class="menu-entry menu-clickable">Default Classes</p>
+                <p class="menu-entry menu-clickable">Map Rotation</p>
+                <p class="menu-entry menu-clickable">Game Mode</p>
+                <p class="menu-entry menu-clickable rate-me">Rate</p>
+            </div>
+
+            <hr class="mw3-hr">
+
+            <div class="menu-entries">
+                <p class="menu-entry menu-tooltip">Create YOUR dedicated server & play with friends</p>
+            </div> <!-- /class="menu-entries" -->
+
+            <footer>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Contact & Support:</p>
+                    </div>
+
+                    <!-- Media - Facebook -->
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <a href="https://www.facebook.com/WimkoKing" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                            Facebook
+                        </a>
+                    </div>
+
+                    <!-- Media - Mail -->
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <a href="https://mail.google.com/mail/u/0/?ui=2&ov=1#inbox?compose=GTvVlcRzCMrfDFLnmCbQsCXMjnztmSnxGKPZSVtMtjNvDZRnGZMLJKLJNVsqjGrvWBlLgrCFKWksr"
+                           target="_blank">
+                            <i class="fa fa-envelope"></i>
+                            GMail
+                        </a>
+                    </div>
+
+                    <!-- Media - GitHub -->
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <a href="https://github.com/JurikMatej" target="_blank">
+                            <i class="fa fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div> <!-- /div class="mw3-menu" -->
+
+        <!-- Right-hand side widget - Options -->
+        <div class="mw3-options col-md-8">
+
+            <!-- Change dynamically with JS - Under lies base option widget -->
+            <div class="options-widget options-widget-base">
+                <p class="mw3-friendlist-icon clickable"><span class="mw3">F</span> Friends</p>
+            </div>
+
+        </div> <!-- /div class="mw3-options" -->
+    </div> <!-- /div class="mw3-app" -->
+
+    <!-- My compiled code -->
+    <script src="../../../app/static/js/main.js"></script>
 </body>
 </html>

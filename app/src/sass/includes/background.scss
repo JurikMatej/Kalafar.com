@@ -1,0 +1,10 @@
+/* Page Backgrounds */
+/* Main background - MW3 Wallpaper */
+body {
+  background-image: url("../images/backgrounds/main_menu_borderless.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// ADD MEDIA QUERY FOR MOBILE & TABLET USERS - SWITCH FORM MW3 WALLPAPER TO GRAY BACKGROUND
