@@ -1,4 +1,6 @@
-
+///////////////////////////
+/*  State Configuration  */
+///////////////////////////
 $.state_config = {
     _default: {
         menu: {

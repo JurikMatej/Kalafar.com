@@ -1,4 +1,7 @@
-
+/////////////////////////////////////
+/*  State DesignPattern Structure  */
+/////////////////////////////////////
+/*
 // Application top level context (State manager)
 class Context {
 
@@ -11,7 +14,8 @@ var Context = (function () {
         // Context API
     };
 })();
-
+*/
+/*
 // Blueprint for all application states (Menu & Options combinations)
 class State {
 
@@ -24,3 +28,4 @@ var State = (function () {
         // State API
     }
 })();
+*/

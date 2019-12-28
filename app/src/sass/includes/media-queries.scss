@@ -1,5 +1,260 @@
-@media screen and (max-width: 479px) {
-	.mw3-app .mw3-options {
-		display: none;
+/* Media Queries */
+
+////////////////////////////////
+/* Window Width Media Queries */
+////////////////////////////////
+@media screen and (max-width: 1720px) {
+	/////////////
+	/*  FONTS  */
+	/////////////
+	h1 {
+		font-size: $base-font-size-h1 - 12px !important;
+
+		&.headline a, &.headline a span, &.mw3-mobile-headline, &.mw3-mobile-headline span.mw3 {
+			font-size: $base-font-size-h1 - 12px !important;
+		}
+
+		& #headline-overflow-break {
+			display: block;
+		}
 	}
+
+	p {
+		font-size: $base-font-size-p - 6px;
+
+		&.menu-tooltip {
+			font-size: $tooltip-font-size-p - 6px !important;
+		}
+
+		&.footer-text {
+			font-size: $footer-font-size - 4px;
+		}
+	}
+
+	span {
+		font-size: $base-font-size-p - 6px;
+	}
+
+	a {
+		font-size: $base-font-size-p - 6px;
+
+		&.footer-text {
+			font-size: $footer-font-size - 4px;
+		}
+	}
+	////////////////
+	/* Components */
+	////////////////
+}
+
+@media screen and (min-width: 990px) {
+	.mw3-app {
+
+		& .mw3-menu {
+			display: block;
+		}
+
+		& .mw3-options {
+			display: block;
+		}
+	}
+}
+
+////////////////////
+/* Mobile Version */
+////////////////////
+@media screen and (max-width: 990px) {
+	html {
+		overflow: scroll;
+	}
+	/////////////
+	/*  Fonts  */
+	/////////////
+	h1 {
+		&.headline a, &.headline a span, &.mw3-mobile-headline, &.mw3-mobile-headline span.mw3 {
+			font-size: $base-font-size-h1 - 35px !important;
+		}
+	}
+
+	////////////////
+	/* Components */
+	////////////////
+	html {
+		//overflow-y: scroll;
+	}
+
+	.mw3-mobile-nav {
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	.mw3-app {
+
+		.mw3-menu {
+			display: none;
+			@include mobile-menu;
+		}
+
+		.mw3-options {
+			@include mobile-options;
+		}
+	}
+}
+
+@media screen and (max-width: 334px) {
+	/////////////
+	/*  Fonts  */
+	/////////////
+	body {
+		font-size: $base-font-size-p - 12px;
+	}
+
+	h1 {
+		&.headline a, &.headline a span, &.mw3-mobile-headline, &.mw3-mobile-headline span.mw3 {
+			font-size: $base-font-size-h1 - 42px !important;
+		}
+	}
+
+	p {
+		font-size: $base-font-size-p - 12px;
+
+		&.menu-tooltip {
+			font-size: $tooltip-font-size-p - 12px !important;
+		}
+
+		&.footer-text {
+			font-size: $footer-font-size - 8px;
+		}
+	}
+
+	span {
+		font-size: $base-font-size-p - 12px;
+	}
+
+	a {
+		font-size: $base-font-size-p - 12px;
+
+		&.footer-text {
+			font-size: $footer-font-size - 8px;
+		}
+	}
+
+
+	////////////////
+	/* Components */
+	////////////////
+	.mw3-mobile-nav {
+
+		& .mw3-menu-toggle {
+			margin: 0 0;
+			padding: 1em 0;
+
+			& #mw3-menu-toggler {
+				padding: 1em 0.75em;
+			}
+		}
+
+		& .mw3-mobile-header {
+			margin-right: 0.5em;
+		}
+	}
+}
+
+/////////////////////////////////
+/* Window Height Media Queries */
+/////////////////////////////////
+@media screen and (max-height: 720px) {
+	////////////////
+	/* Components */
+	////////////////
+	html {
+		overflow-y: scroll;
+	}
+
+	.mw3-app {
+		& .mw3-menu {
+			& footer {
+				position: relative;
+				bottom: 0;
+			}
+		}
+
+		& .mw3-options {
+
+			& .options-widget-base .mw3-friendlist-button {
+				//bottom: 0;
+				//right: 0;
+				//top: 85% !important;
+				//left: 70% !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-height: 720px) and (min-width: 990px) {
+	////////////////
+	/* Components */
+	////////////////
+	html {
+		height: 720px;
+		overflow-y: scroll;
+	}
+
+	.mw3-app {
+		& .mw3-menu {
+			& footer {
+				&::before {
+					content: '';
+					display: block;
+					height: 1px;
+					width: 100%;
+					margin: 1px auto 1px auto;
+					border: none;
+					background-color: transparent;
+					background-image: linear-gradient(
+									-90deg,
+									rgba(255, 255, 255, 0.6),
+									rgba(255, 255, 255, 0.5),
+									rgba(160, 160, 160, 0.5),
+									hsla(0, 0, 0, 0),
+									hsla(0, 0, 0, 0));
+				}
+			}
+		}
+
+		& .mw3-options {
+			& p.mw3-friendlist-button {
+				bottom: 3.1em !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-height: 628.36px) and (min-width: 990px) {
+	html {
+		height: auto;
+	}
+
+	.mw3-app {
+		& .mw3-options {
+			& p.mw3-friendlist-button {
+				bottom: 0 !important;
+			}
+		}
+	}
+}
+
+///////////////////
+/* NOT SUPPORTED */
+///////////////////
+@media screen and (max-width: 255px) {
+	@include not-supported;
+}
+
+@media screen and (max-height: 500px) and (min-width: 990px) {
+	@include not-supported;
+}
+
+@media screen and (max-height: 300px) and (max-width: 990px) {
+	@include not-supported;
 }

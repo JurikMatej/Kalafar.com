@@ -1,5 +1,12 @@
 /* Page components */
 
+///////////////////////////////////////////////
+/* Not Supported Screen Resolution Component */
+///////////////////////////////////////////////
+div.not-supported {
+	display: none;
+}
+
 ////////////////////////
 /* App infrastructure */
 ////////////////////////
@@ -8,10 +15,50 @@ html {
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
+	border: none;
 }
 
 body {
+	border: none;
 	height: inherit;
+}
+
+///////////////////////
+/* Mobile Navigation */
+///////////////////////
+.mw3-mobile-nav {
+	height: 9vh;
+	width: 100%;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-right: 0;
+	align-items: center;
+	background: hsla(0, 0, 0, 0.4) no-repeat content-box;
+
+	& .mw3-menu-toggle {
+		margin: 0;
+		flex: 1 1 auto;
+
+		& #mw3-menu-toggler {
+			border:none;
+			padding: 1em 2em;
+			background-color: transparent;
+			color: $base-font-color;
+		}
+	}
+
+	& .mw3-mobile-header {
+		flex: 2 2 auto;
+		align-items: center;
+		text-align: right;
+		margin: 0;
+
+		& #mw3-mobile-headline {
+			margin: 0;
+		}
+	}
 }
 
 //////////
@@ -63,7 +110,7 @@ body {
 
 			& .menu-entry {
 				margin: 3px 0;
-				padding: 3px 2em 3px 0;
+				padding: 3px 2em 3px 10px;
 				text-align: right;
 			}
 
@@ -83,12 +130,20 @@ body {
 
 		& footer {
 			/* FOOTER COMPONENT */
-			width: 90%;
-			margin: 0 auto;
-			padding: 0 18px;
+			width: 100%;
+			//margin: 0 auto;
+			//padding: 0 18px;
 			position: absolute;
-			left: 3em;
+			margin: 0;
+			padding: 0;
 			bottom: 2em;
+
+			& * {
+				width: inherit;
+				margin: 0;
+				padding: 0;
+			}
+
 		}
 	}
 
@@ -104,7 +159,7 @@ body {
 		}
 
 		& .options-widget-base {
-			& p.mw3-friendlist-icon {
+			& p.mw3-friendlist-button {
 				position: absolute;
 				padding: 2.5px 15px;
 				bottom: 1.5em;
@@ -149,7 +204,11 @@ hr {
 
 	&:hover {
 		cursor: pointer;
-		background-color: rgba(122, 130, 117, 0.9);
+		background-color: rgba(122, 130, 117, 0.9) !important;
 		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
 	}
+}
+
+#headline-overflow-break {
+	display: none;
 }

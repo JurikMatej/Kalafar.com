@@ -29,10 +29,31 @@
 </head>
 
 <body>
+    <!-- Notify users, that the screen they use is not supported -->
+    <div class="not-supported row m-auto text-center py-4">
+        <h6>Resolution <b>not</b> <u>supported</u></h6>
+    </div>
+
+    <!-- Menu slide open button for mobiles -->
+    <div class="mw3-mobile-nav m-0">
+        <div class="mw3-menu-toggle">
+<!--            <button type="button" id="mw3-menu-toggler" class="clickable">Menu</button>-->
+            <i id="mw3-menu-toggler" class="fa fa-bars fa-lg clickable"></i>
+        </div>
+        <div class="mw3-mobile-header">
+            <h1 class="mw3-mobile-headline"><span class="mw3">Kalafar</span>.com</h1>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
     <!-- Left-hand side Widget - Main Menu -->
     <div class="mw3-app row">
-        <div class="mw3-menu col-md-4">
-            <h1 class="headline"><a href="./"><span class="mw3">Kalafar</span>.com</a></h1>
+        <div class="mw3-menu col-lg-4 ">
+            <h1 class="headline">
+                <a href="./">
+                    <span class="mw3">Kalafar</span><br id="headline-overflow-break">.com
+                </a>
+            </h1>
             <hr class="mw3-hr">
 
             <div class="menu-entries">
@@ -61,29 +82,30 @@
             <footer>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <p>Contact & Support:</p>
+                        <p class="footer-text">Contact & Support:</p>
                     </div>
-
+                </div>
+                <div class="row">
                     <!-- Media - Facebook -->
-                    <div class="col-md-4 col-sm-12 text-center">
-                        <a href="https://www.facebook.com/WimkoKing" target="_blank">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                        <a href="https://www.facebook.com/WimkoKing" target="_blank" class="footer-text">
                             <i class="fa fa-facebook-square"></i>
                             Facebook
                         </a>
                     </div>
 
                     <!-- Media - Mail -->
-                    <div class="col-md-4 col-sm-12 text-center">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
                         <a href="https://mail.google.com/mail/u/0/?ui=2&ov=1#inbox?compose=GTvVlcRzCMrfDFLnmCbQsCXMjnztmSnxGKPZSVtMtjNvDZRnGZMLJKLJNVsqjGrvWBlLgrCFKWksr"
-                           target="_blank">
+                           target="_blank" class="footer-text">
                             <i class="fa fa-envelope"></i>
                             GMail
                         </a>
                     </div>
 
                     <!-- Media - GitHub -->
-                    <div class="col-md-4 col-sm-12 text-center">
-                        <a href="https://github.com/JurikMatej" target="_blank">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                        <a href="https://github.com/JurikMatej" target="_blank" class="footer-text">
                             <i class="fa fa-github"></i>
                             GitHub
                         </a>
@@ -93,17 +115,17 @@
         </div> <!-- /div class="mw3-menu" -->
 
         <!-- Right-hand side widget - Options -->
-        <div class="mw3-options col-md-8">
+        <div class="mw3-options col-lg-8 col-md-12">
 
             <!-- Change dynamically with JS - Under lies base option widget -->
             <div class="options-widget options-widget-base">
-                <p class="mw3-friendlist-icon clickable"><span class="mw3">F</span> Friends</p>
+                <p class="mw3-friendlist-button clickable"><span class="mw3">F</span> Friends</p>
             </div>
 
         </div> <!-- /div class="mw3-options" -->
     </div> <!-- /div class="mw3-app" -->
 
-    <!-- My compiled code -->
+    <!-- Compiled src JS code -->
     <script src="../../../app/static/js/main.js"></script>
 </body>
 </html>

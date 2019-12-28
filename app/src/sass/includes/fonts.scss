@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 	color: $base-font-color;
 	text-wrap: normal;
 	word-wrap: break-word;
+	transition: font-size .25s;
 }
 
 /* Headers */
@@ -23,6 +24,12 @@ h1 {
 		@extend h1;
 		color: $base-font-color;
 		text-align: right;
+	}
+
+	&.mw3-mobile-headline {
+		@extend h1;
+		margin: 0;
+		padding: 0;
 	}
 }
 

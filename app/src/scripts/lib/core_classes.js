@@ -1,6 +1,7 @@
-
+////////////////////
+/*  Core Classes  */
+////////////////////
 // Note to myself - change class definitions to be a module definitions
-
 class Stack {
     constructor(datatype) {
         this.datatype = datatype;

@@ -4,6 +4,7 @@
 
 /*  Setup  */
 $.animations = {
+    // Animated props / elements
     props: {
         app_window: window,
         mw3_menu: $('.mw3-app .mw3-menu'),
@@ -41,7 +42,7 @@ $.animations = {
 };
 
 /* Load from global jQuery Namespace */
-const { fn } = $.animations;
+const { fn } = $.animations; // Helper functions used in animation functions
 const { props } = $.animations; // Elements animations are working with
 const { menuSlider, showMenuWhenOnDesktop } = $.animations; // Animations themselves (functions)
 
