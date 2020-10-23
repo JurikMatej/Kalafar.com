@@ -9,7 +9,6 @@ __Author__: Matej Jurík \<jurik.matejw@gmail.com\>
 
 __Original__:
 ![Original Kalafar Launcher \(img 1/2\)](./app/static/images/original/kalafar-orig.jpeg "Original Kalafar Launcher")
-![Original Kalafar Launcher \(img 2/2\)](./app/static/images/original/kalafar-advanced-orig.jpeg "Original Kalafar Launcher Advanced Options")
 ________________________________________________
 ## Usage
 * **__Yet__ to be specified...**
